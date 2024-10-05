@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Flag Project</title>
+    <style>
+        body {
+            background-color: rgb(173, 173, 173);
+        }
+
+        .flag {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            width: 1000px; 
+            height: 600px; 
+            position: relative;
+            overflow: hidden;
+        }
+
+        .red-part {
+            position: absolute;
+            background-color: #DA291C;
+            width: 600px;
+            height: 600px; 
+            margin-left: 400px; 
+        }
+
+        .triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            margin-left: 250px; 
+            border-top: 60px solid transparent; 
+            border-right: 150px solid #DA291C; 
+            border-bottom: 60px solid transparent; 
+        }
+
+        .triangle-one {
+            margin-top: -60px;
+        }
+
+        .triangle-two {
+            margin-top: 60px;
+        }
+
+        .triangle-three {
+            margin-top: 180px;
+        }
+
+        .triangle-four {
+            margin-top: 300px;
+        }
+
+        .triangle-five {
+            margin-top: 420px;
+        }
+
+        .triangle-six {
+            margin-top: 540px;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Media Queries for iPhone 14 Pro Max */
+        @media screen and (max-width: 430px) {
+            .flag {
+                width: 430px; 
+                height: calc(430px * (600 / 1000)); 
+            }
+
+            .red-part {
+                width: calc(430px * 0.6); 
+                height: 100%; 
+                margin-left: calc(430px * 0.4); 
+            }
+
+            .triangle {
+                border-top: calc(150px * (430 / 1000)); 
+                border-right: calc(150px * (430 / 1000)); 
+                border-bottom: calc(150px * (430 / 1000)); 
+            }
+
+            .triangle-one {
+                margin-top: calc(-150px * (430 / 1000)); 
+            }
+
+            .triangle-two {
+                margin-top: calc(150px * (430 / 1000));
+            }
+
+            .triangle-three {
+                margin-top: calc(150px * 2 * (430 / 1000));
+            }
+
+            .triangle-four {
+                margin-top: calc(150px * 3.6 * (430 / 1000));
+            }
+
+            .triangle-five {
+                margin-top: calc(150px * 5.6 * (430 / 1000));
+            }
+
+            .triangle-six {
+                margin-top: calc(150px * 7.6 * (430 / 1000));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">The flag of the Kingdom of Bahrain</h1>
+    <div class="container">
+        <div class="flag">
+            <div class="triangle triangle-one"></div>
+            <div class="triangle triangle-two"></div>
+            <div class="triangle triangle-three"></div>
+            <div class="triangle triangle-four"></div>
+            <div class="triangle triangle-five"></div>
+            <div class="triangle triangle-six"></div>
+            <div class="red-part"></div>
+        </div>
+    </div>
+</body>
+
+</html>
